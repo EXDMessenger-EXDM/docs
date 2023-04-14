@@ -16,5 +16,5 @@ PATCH /api/channels/<path:guild_id>/<path:channel_id> - Edit channel info
 GET /api/channels/<path:guild_id>/<path:channel_id>/messages - Get channel messages
 POST /api/channels/<path:guild_id>/<path:channel_id>/messages - Send message to channel
 
-GET /api/channels/<path:guild_id>/<path:channel_id>/<path:message_id> - Get message in the channel
+GET /api/channels/<path:guild_id>/<path:channel_id>/<path:message_id> - Get message in channel
 ```

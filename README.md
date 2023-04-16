@@ -11,11 +11,11 @@ Response: {"text": "Lorem ipsum - стандартный набор слов-з�
 
 # Channels
 ```
-GET /api/channels/<path:guild_id>/<path:channel_id> - Get channel info
-PATCH /api/channels/<path:guild_id>/<path:channel_id> - Edit channel info
+GET /api/channels/<path:channel_id> - Get channel info
+PATCH /api/channels/<path:channel_id> - Edit channel info
 
-GET /api/channels/<path:guild_id>/<path:channel_id>/messages - Get channel messages
-POST /api/channels/<path:guild_id>/<path:channel_id>/messages - Send message to channel
+GET /api/channels/<path:channel_id>/messages - Get channel messages
+POST /api/channels/<path:channel_id>/messages - Send message to channel
 
-GET /api/channels/<path:guild_id>/<path:channel_id>/<path:message_id> - Get message in channel
+GET /api/messages/<path:message_id> - Get message in channel
 ```

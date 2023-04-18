@@ -13,6 +13,7 @@ Response: {"text": "Lorem ipsum - стандартный набор слов-з�
 ```
 POST /auth/login - Login to account
 JSON payload example: {"email": "example@example.com", "password": "something123"}
+Returns: {"token": "auth.token.for_exdm"}
 Errors:
  - 404 - Account not found
  - 400 - Some fields is missing (Invalid JSON payload)
@@ -20,6 +21,7 @@ Errors:
 ```
 POST /auth/register - Register account
 JSON payload example: {"username": "DragonFire", "password": "something123", "email": "example@example.com"}
+Returns: {"token": "auth.token.for_exdm"}
 Errors:
  - 400 - Some fields is missing (Invalid JSON payload)
 ```

@@ -16,7 +16,8 @@ JSON payload example: {"email": "example@example.com", "password": "something123
 Errors:
  - 404 - Account not found
  - 400 - Some fields is missing (Invalid JSON payload)
- 
+```
+```
 POST /auth/register - Register account
 JSON payload example: {"username": "DragonFire", "password": "something123", "email": "example@example.com"}
 Errors:
@@ -48,6 +49,11 @@ PATCH /api/channels/<path:channel_id> - Edit channel info
 GET /api/channels/<path:channel_id>/messages - Get channel messages
 
 GET /api/messages/<path:message_id> - Get message in channel
+```
+```
+GET /api/channels/<path:channel_id>/messages - Get all messages in channel
+Returns:
+[{"author": 1, "channel_id": "global", "message": "First message!", "id": 1, "reactions": [], "attachments": []}, {"author": 1, "channel_id": "global", "message": "...and second!", "id": 2, "reactions": [], "attachments": []}]
 ```
 ```
 POST /api/channels/<path:channel_id>/messages - Send message to channel

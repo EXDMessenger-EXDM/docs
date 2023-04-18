@@ -46,7 +46,11 @@ GET /api/channels/<path:channel_id> - Get channel info
 PATCH /api/channels/<path:channel_id> - Edit channel info
 
 GET /api/channels/<path:channel_id>/messages - Get channel messages
-POST /api/channels/<path:channel_id>/messages - Send message to channel
 
 GET /api/messages/<path:message_id> - Get message in channel
+```
+```
+POST /api/channels/<path:channel_id>/messages - Send message to channel
+JSON payload example: {"content": "Hello everyone!"}
+Returns: {'message': 'Write ok'} and 200 OK
 ```

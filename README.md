@@ -1,6 +1,42 @@
 # docs
 API docs for EXDM
 
+# Me
+```
+GET http://127.0.0.1:3001/api/users/@me
+
+Headers: {"Authorization": "token"}
+
+{
+  "avatar": "default.png",
+  "banner": "default.png",
+  "bot_variables": [],
+  "connected_accounts": [],
+  "discriminator": 3244,
+  "email": "someemail@gmail.com",
+  "flags": [],
+  "guilds": [
+    [
+      "1",
+      "DFC | Test",
+      null,
+      null,
+      "6407958643072662934",
+      "dfc",
+      null,
+      null,
+      null,
+      null
+    ],
+    null
+  ],
+  "id": 6407958643072662934,
+  "status": 0,
+  "username": "dragonfirex"
+}
+
+```
+
 # AI
 ```
 POST /api/ai/chatgpt-3.5 - Continue the message with chatgpt 3.5
